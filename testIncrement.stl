@@ -1,0 +1,26 @@
+program example
+	declare a,b, t;
+
+	function incWithREF(inout x)
+    x:= x+1;
+    print x;
+    return 0
+  endfunction
+
+  function incWithCV(in x)
+    x:= x+1;
+    print x;
+    return 0
+  endfunction
+
+	a:= 5;
+  b:= 5;
+  print a;
+  print b;
+  print -1;
+  t:=incWithREF(inout a);
+  t:=incWithCV(in b);
+  print -1;
+	print a;
+  print b
+endprogram
