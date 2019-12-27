@@ -1,6 +1,3 @@
-#Kalpazidis Alexandros  A.M. 2985 cse52985
-#Grigorios Makris       A.M. 3022 cse53022
-
 import sys
 
 F = open(sys.argv[1] , "r")
